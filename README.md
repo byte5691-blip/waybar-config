@@ -181,21 +181,3 @@ pkill waybar && waybar
 Nerd Fonts icon website:
 
 - [Nerd Fonts Cheat Sheet](https://www.nerdfonts.com/cheat-sheet?utm_source=chatgpt.com)
-
-Example icons:
-
-| App | Icon |
-|---|---|
-| Discord | `` |
-| Linux | `` |
-| Arch | `` |
-| Firefox | `󰈹` |
-| Steam | `` |
-
-Copy icon and replace:
-
-```json
-"format": "ICON"
-```
-
-with your own icon.
