@@ -85,10 +85,117 @@ sudo pacman -S waybar hyprland kitty grim slurp wl-clipboard ttf-jetbrains-mono-
 ```
 
 ---
+---
 
-# ❤️ Credits
+# 🎨 Add Your Own Icon
 
-Made by RyzenArch
+You can add your own custom app button/module to Waybar.
 
-GitHub:
-[byte5691-blip GitHub](https://github.com/byte5691-blip?utm_source=chatgpt.com)
+---
+
+##   Add module
+
+Open config:
+
+```bash
+nano ~/.config/waybar/config.jsonc
+```
+
+Example module:
+
+```json
+"custom/discord": {
+    "format": "",
+    "on-click": "discord"
+},
+```
+
+Flatpak version:
+
+```json
+"custom/discord": {
+    "format": "",
+    "on-click": "flatpak run com.discordapp.Discord"
+},
+```
+
+---
+
+## Add module to Waybar
+
+Find:
+
+```json
+"modules-left": [
+```
+
+Add your module:
+
+```json
+"modules-left": [
+    "custom/discord",
+    "hyprland/workspaces"
+],
+```
+
+You can place it anywhere you want.
+
+---
+
+## Add CSS style
+
+Open style file:
+
+```bash
+nano ~/.config/waybar/style.css
+```
+
+Add:
+
+```css
+#custom-discord {
+    background: rgba(18,18,24,0.92);
+    color: white;
+
+    border-radius: 16px;
+
+    padding: 0 20px;
+
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+```
+
+---
+
+## Restart Waybar
+
+```bash
+pkill waybar && waybar
+```
+
+---
+
+# 🔤 Find More Icons
+
+Nerd Fonts icon website:
+
+- [Nerd Fonts Cheat Sheet](https://www.nerdfonts.com/cheat-sheet?utm_source=chatgpt.com)
+
+Example icons:
+
+| App | Icon |
+|---|---|
+| Discord | `` |
+| Linux | `` |
+| Arch | `` |
+| Firefox | `󰈹` |
+| Steam | `` |
+
+Copy icon and replace:
+
+```json
+"format": "ICON"
+```
+
+with your own icon.
