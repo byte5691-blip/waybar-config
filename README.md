@@ -10,3 +10,9 @@ cd waybar-config
 ~~~
 chmod +x ./setup.sh
 ~~~
+**4.**
+~~~
+./setup.sh
+~~~
+
+**Reboot**
