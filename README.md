@@ -1,9 +1,12 @@
 **Waybar-Config-Install**
-**1.**
 ~~~
 git clone https://github.com/byte5691-blip/waybar-config
 ~~~
 **2.**
 ~~~
 cd waybar-config
+~~~
+**3.** 
+~~~
+chmod +x ./setup.sh
 ~~~
